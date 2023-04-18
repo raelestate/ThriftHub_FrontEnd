@@ -1,0 +1,68 @@
+/*
+AYAW PANG-HILABOT ANI NGA PART!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+@import url('https://fonts.cdnfonts.com/css/nunito');
+@font-face {
+    font-family: Nunito-Black;
+    src: url(../resources/fonts/nunito/static/Nunito-Black.ttf);
+}
+@font-face {
+    font-family: Nunito-BlackItalic;
+    src: url(../resources/fonts/nunito/static/Nunito-BlackItalic.ttf);
+}
+@font-face {
+    font-family: Nunito-Bold;
+    src: url(../resources/fonts/nunito/static/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: Nunito-BoldItalic;
+    src: url(../resources/fonts/nunito/static/Nunito-BoldItalic.ttf);
+}
+@font-face {
+    font-family: Nunito-ExtraBold;
+    src: url(../resources/fonts/nunito/static/Nunito-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Nunito-ExtraLight;
+    src: url(../resources/fonts/nunito/static/Nunito-ExtraLight.ttf);
+}
+@font-face {
+    font-family: Nunito-ExtraLightItalic;
+    src: url(../resources/fonts/nunito/static/Nunito-ExtraLightItalic.ttf);
+}
+@font-face {
+    font-family: Nunito-Italic;
+    src: url(../resources/fonts/nunito/static/Nunito-Italic.ttf);
+}
+@font-face {
+    font-family: Nunito-Light;
+    src: url(../resources/fonts/nunito/static/Nunito-Light.ttf);
+}
+@font-face {
+    font-family: Nunito-LightItalic;
+    src: url(../resources/fonts/nunito/static/Nunito-LightItalic.ttf);
+}
+@font-face {
+    font-family: Nunito-Medium;
+    src: url(../resources/fonts/nunito/static/Nunito-Medium.ttf);
+}
+@font-face {
+    font-family: Nunito-MediumItalic;
+    src: url(../resources/fonts/nunito/static/Nunito-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Nunito-Regular;
+    src: url(../resources/fonts/nunito/static/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: Nunito-SemiBold;
+    src: url(../resources/fonts/nunito/static/Nunito-SemiBold.ttf);
+}
+@font-face {
+    font-family: Nunito-ItalicVariableFont;
+    src: url(../resources/fonts/nunito/Nunito-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Nunito-VariableFont;
+    src: url(../resources/fonts/nunito/Nunito-VariableFont_wght.ttf);
+}

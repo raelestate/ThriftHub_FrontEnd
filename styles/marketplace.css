@@ -1,0 +1,73 @@
+:root {
+  --jumbotron-padding-y: 3rem;
+  --bs-border-color-translucent: rgb(103, 103, 103);
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.navbar.navbar-dark.bg-dark.box-shadow {
+  background-color: transparent;
+}
+
+strong {
+  color: white;
+}
+.container.navb{
+  padding: 1px;
+}
+
+.container.card1 {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgb(90, 57, 255);
+}
+.card-body{
+  background-color: rgb(230, 228, 236);
+}
+.card{
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  border: 1px solid #662390;
+}
+.navbar{
+  background-color: #542DA6;
+}
