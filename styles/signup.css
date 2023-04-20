@@ -26,41 +26,39 @@ button.btn-hover.color-3.pr-3{
     margin-left: 30px;
 }
 
-form {
-    min-width:100px;
-    max-width:400px;
-    padding:20px;
-    margin: auto;
-    background:transparent; 
-    -webkit-box-shadow: 3px 3px 23px -9px rgba(0,0,0,0.86);
-    -moz-box-shadow: 3px 3px 23px -9px rgba(0,0,0,0.86);
-    box-shadow: 3px 3px 23px -9px rgba(0,0,0,0.86);
-    border-radius: 5%;
-  }
-  
-  form input {
-    border:1px solid #eee;
-    border-radius:0 !important;
-    padding:5px 8px;
-    color:#444;
-  }
-  
-  form button {
-    color:#555;
-    background:#ffffffad;
-    border:1px solid #fff !important;
-    margin-top:20px;
-    border-radius:0px Important;
-  }
-  
-  form button:hover {
-    background:#ad2fd3 !important;
-  }
-  
-  .pull-right {
-    float:right;
-  }
 
 .btn{
     color:white;
+}
+
+p.fname,p.lname,p.uname,p.pass{
+  font-family: Nunito-Bold;
+  color: rgb(184, 184, 184);
+  padding-left: 2%;
+  margin-top: .9%;
+  margin-bottom: 1%;
+}
+input#fname,input#lname,input#uname,input#pass{
+  font-family: Nunito-Regular;
+  border-radius: 10px; 
+  border: 1px solid rgb(124, 124, 124); 
+  color: white; 
+  background-color: transparent;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 1%;
+  padding-left: 4%;
+  margin-left: 2%;
+}
+label{
+  font-family: Nunito-Semibold;
+  color:rgb(47, 23, 61);
+}
+.wrap-contact100 {
+  width: auto;
+  padding: auto;
+  background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(25,27,50,1) 45%, rgba(85,49,97,1) 100%);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 42px 55px 45px;
 }
