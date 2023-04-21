@@ -1,35 +1,42 @@
-body{
+body {
     font-family: Nunito-VariableFont, Arial, Helvetica, sans-serif;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(25,27,50,1) 45%, rgba(85,49,97,1) 100%);
-    color:white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(25, 27, 50, 1) 45%, rgba(85, 49, 97, 1) 100%);
+    color: white;
 }
-img.logo.pt-5{
+
+img.logo.pt-5 {
     padding-left: 5px;
-    padding-bottom:10px;
+    padding-bottom: 10px;
 }
-.pt-5{
-    padding-top: 7rem!important;
+
+.pt-5 {
+    padding-top: 7rem !important;
 }
-p.welcometext.text-start{
+
+p.welcometext.text-start {
     padding-left: 1.5%;
     font-size: 1.5rem;
     color: white;
     font-family: Nunito-SemiBold;
     line-height: 30px;
 }
-p.passw,p.email{
+
+p.passw,
+p.email {
     font-family: Nunito-Bold;
     color: rgb(184, 184, 184);
     padding-left: 2%;
     margin-top: .9%;
     margin-bottom: 1%;
 }
-input#e-inpt,input#p-inpt{
+
+input#e-inpt,
+input#p-inpt {
     font-family: Nunito-Regular;
-    border-radius: 10px; 
-    border: 1px solid white; 
-    color: white; 
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
     background-color: transparent;
     width: 300px;
     height: 40px;
@@ -37,28 +44,34 @@ input#e-inpt,input#p-inpt{
     padding-left: 4%;
     margin-left: 2%;
 }
-label{
+
+label {
     font-family: Nunito-Semibold;
-    color:white;
+    color: white;
 }
-.form-check{
+
+.form-check {
     padding-top: 1.5%;
     margin-left: 2%;
 }
-label.form-check-label{
+
+label.form-check-label {
     font-family: Nunito-Regular;
     cursor: pointer;
 }
+
 .form-check-input:checked {
     background-color: #751f9a;
     border-color: #751f9a;
 }
+
 .form-check-input[type=checkbox] {
     border-radius: 0.25em;
     cursor: pointer;
 }
 
-.btn-hover,.btn-hover1 {
+.btn-hover,
+.btn-hover1 {
     width: 140px;
     font-size: 16px;
     font-weight: 600;
@@ -66,7 +79,7 @@ label.form-check-label{
     cursor: pointer;
     margin: 10px;
     height: 44px;
-    text-align:center;
+    text-align: center;
     border: none;
     background-size: 300% 100%;
 
@@ -77,8 +90,9 @@ label.form-check-label{
 }
 
 .btn:hover {
-    background-position: right center; /* change the direction of the change here */
-  }
+    background-position: right center;
+    /* change the direction of the change here */
+}
 
 .btn-hover:focus {
     outline: none;
@@ -92,11 +106,13 @@ label.form-check-label{
     border: 1px solid rgb(255, 255, 255);
     background-color: transparent;
 }
-.btn-hover1.color-1:hover{
+
+.btn-hover1.color-1:hover {
     border: 1px solid rgb(189, 53, 186);
     transition: all .4s ease-in-out;
-    color:rgb(246, 146, 233);
+    color: rgb(246, 146, 233);
 }
+
 .btn-hover:hover {
     background-position: 100% 0;
     -o-transition: all .4s ease-in-out;
@@ -104,7 +120,7 @@ label.form-check-label{
     transition: all .4s ease-in-out;
 }
 
-p.forget a{
+p.forget a {
     color: white;
     border-bottom: 1px white;
     text-decoration: none;
@@ -112,48 +128,59 @@ p.forget a{
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
 }
+
 p.forget a:hover {
     transition: all .4s ease-in-out;
     color: rgb(142, 64, 162);
 }
-.forgetpass{
+
+.forgetpass {
     margin: auto;
     padding-left: 200px;
 }
-.forgetpass a{
-    position:relative;
+
+.forgetpass a {
+    position: relative;
     top: -28px;
     font-size: .9em;
     font-family: Nunito-SemiBold;
 }
-p.slogan, p.slogan1{
+
+p.slogan,
+p.slogan1 {
     font-family: Nunito-Bold;
-    color:white;
+    color: white;
 }
-.col1{
+
+.col1 {
     margin: auto;
 }
-p.slogan.text-center{
+
+p.slogan.text-center {
     font-size: 1.3em;
-    position:relative;
+    position: relative;
     top: 100px;
 }
-p.slogan1.text-center{
+
+p.slogan1.text-center {
     font-family: Nunito-ExtraBold;
     font-size: 4em;
-    position:relative;
-    top:70px;
+    position: relative;
+    top: 70px;
 }
-.smool{
-    color:white;
-    position:relative;
-    top:40px;
+
+.smool {
+    color: white;
+    position: relative;
+    top: 40px;
     font-family: Nunito-BoldItalic;
     font-size: 13px;
 }
-.col-sm h3{
-    color:white;
+
+.col-sm h3 {
+    color: white;
 }
-footer.text-center.text-white.fixed-bottom{
+
+footer.text-center.text-white.fixed-bottom {
     background-color: transparent;
 }
