@@ -7,47 +7,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <link href="/styles/signup.css" rel="stylesheet">
+  <link href="/styles/index.css" rel="stylesheet">
   <link href="/styles/fonts.css" rel="stylesheet" type="text/css">
-  <title>Register</title>
+  <script src="./scripts/script.js" defer></script>
+  <!--JAVASCRIPT BOOTSTRAP-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+  <title>Welcome to ThriftHub</title>
 </head>
 
 <body>
-  <div class="container text-center">
-    <div class="col-sm pt-5 pb-5">
-      <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4 text-center"><b>Let's get to know each other!</b></h1>
-          <p class="lead text-start pb-5 text-center">Your information is safe with us. Trust the developers.</p>
-          <p class="lead text-start pt5 text-center">First, we need to know who you are.</p>
+  <section id="login">
+    <div class="container d-flex justify-content-center pb-5 pb-5">
+      <div class="row">
+        <div class="col">
+          <img class="logo pt-5" src="/resources/Logo.png">
+          <p class="welcometext text-start">Hello! Let's Get to know each other.</p>
+          <form>
+            <small>
+              <p class="email">First Name:</p>
+            </small>
+            <input type="text" id="e-inpt">
+            <small>
+              <p class="email">Last Name:</p>
+            </small>
+            <input type="text" id="e-inpt">
+            <small>
+              <p class="email">Date of Birth:</p>
+            </small>
+            <input type="text" id="e-inpt">
+            <small>
+              <p class="email">Email-Address:</p>
+            </small>
+            <input type="text" id="e-inpt">
+            <small>
+              <p class="email">Username:</p>
+          </small>
+          <input type="text" id="e-inpt">
+            <small>
+              <p class="passw">Password:</p>
+            </small>
+            <input type="password" id="p-inpt">
+            <button class="btn-hover1 color-1" onclick="window.open('user-profile.html')">Let's GO!</button>
+          </form>
         </div>
       </div>
     </div>
-  </div>
-  <div class=".container d-flex justify-content-center">
-    <form class="wrap-contact100">
-      <small>
-        <p class="fname">First name:</p>
-      </small>
-      <input type="text" id="fname">
-
-      <small>
-        <p class="lname">Last Name:</p>
-      </small>
-      <input type="text" id="lname">
-
-      <small>
-        <p class="uname">Username:</p>
-      </small>
-      <input type="text" id="uname">
-
-      <small>
-        <p class="pass">Password:</p>
-      </small>
-      <input type="password" id="pass">
-      <button type="button" class="btn-hover color-3" onclick="window.open('marketplace.html')">Login</button>
-    </form>
-  </div>
+  </section>
+ 
 </body>
 
 </html>

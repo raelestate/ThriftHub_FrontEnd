@@ -54,11 +54,3 @@ label{
   font-family: Nunito-Semibold;
   color:rgb(47, 23, 61);
 }
-.wrap-contact100 {
-  width: auto;
-  padding: auto;
-  background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(25,27,50,1) 45%, rgba(85,49,97,1) 100%);
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 42px 55px 45px;
-}
