@@ -304,41 +304,53 @@
 
   </header><!-- End Header -->
 
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
+ <!-- ======= Sidebar ======= -->
+ <aside id="sidebar" class="sidebar">
 
-    <ul class="sidebar-nav" id="sidebar-nav">
+  <ul class="sidebar-nav" id="sidebar-nav">
 
-      <li class="nav-item">
-        <a class="nav-link " href="marketplace.html">
-          <i class="bi bi-shop"></i>
-          <span>Browse All</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="notifications.html">
-          <i class="bi bi-bell"></i>
-          <span>Notifications</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="inbox.html">
-          <i class="bi bi-inbox"></i>
-          <span>Inbox</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="buying.html">
-          <i class="bi bi-cart"></i>
-          <span>Buying</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="selling.html">
-          <i class="bi bi-currency-dollar"></i>
-          <span>Selling</span>
-        </a>
-      </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="marketplace.html">
+        <i class="bi bi-shop"></i>
+        <span>Browse All</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="notifications.html">
+        <i class="bi bi-bell"></i>
+        <span>Notifications</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="inbox.html">
+        <i class="bi bi-inbox"></i>
+        <span>Inbox</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="buying.html">
+        <i class="bi bi-cart"></i>
+        <span>Buying</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="selling.html">
+        <i class="bi bi-currency-dollar"></i>
+        <span>Selling</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="viewcart.html">
+        <i class="bi bi-cart-plus"></i>
+        <span>View Cart</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" href="createlisting.html">
+        <i class="bi bi-plus"></i>
+        <span>Create Listing</span>
+      </a>
+    </li>
       
       <!-- End Profile Page Nav -->
 
@@ -389,12 +401,6 @@
 
     <div class="pagetitle">
       <h1>Marketplace</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="user.html">Listings</a></li>
-          <li class="breadcrumb-item active">Trending</li>
-        </ol>
-      </nav>
     </div><!-- End Page Title -->
 
     <!--For Products-->
@@ -402,32 +408,34 @@
       
       <div class="row">
         <div class="col-sm-3">
-          <div class="card card-cascade wider shadow">
-            <div class="view view-cascade overlay text-center">
-              <img class="card-img-top" src="/assets/img/product-1.jpg">
-              <h2 class="card-title">Sapatos ni Neri</h2>
-            </div>
-            <div class="card-body">
-              <p class="text-center fw-bolder large bi-currency-dollar" style="color:rgb(11, 224, 82); font-size: 24px;">9.00</p>
-            </div>
-            <div class="card-body">
-              <p class="justify-content-evenly">Lorem, Parinasan sit Neri dolor Talaba et Taboada al Aldebaran</p>
-            </div>
-            <div class="card-body text-center px-4 m-auto">
-              <div class="btn-group" role="group">
-                <button type="button" class="btn btn-sm btn-secondary" onclick="successAddCart()">Add to cart</button>
-                <button type="button" class="btn btn-sm btn-primary" onclick="window.open('viewproduct.html')">View Product</button>
-                <button type="button" class="btn btn-sm btn-success" onclick="window.open('#')">Buy Now</button>
+          <a href="viewproduct.html" style="text-decoration: none; color:white;">
+            <div class="card shadow">
+              <div class="text-center">
+                <img class="card-img-top" src="/assets/img/product-1.jpg">
+                <h2 class="card-title">Sapatos ni Neri</h2>
+              </div>
+              <div class="card-body">
+                <p class="text-center fw-bolder large bi-currency-dollar" style="color:rgb(11, 224, 82); font-size: 24px;">9.00</p>
+              </div>
+              <div class="card-body">
+                <p class="justify-content-evenly">Lorem, Parinasan sit Neri dolor Talaba et Taboada al Aldebaran</p>
+              </div>
+            </a>
+              <div class="card-body text-center px-4 m-auto">
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-sm btn-secondary" onclick="successAddCart()">Add to cart</button>
+                  <button type="button" class="btn btn-sm btn-primary" onclick="window.open('viewproduct.html')">View Product</button>
+                  <button type="button" class="btn btn-sm btn-success" onclick="window.open('#')">Buy Now</button>
+                </div>
+              </div>
+              <div class="card-body">
+                <small style="color: grey;">Stock(s) left: 4</small>
+              </div>
+              <div class="card-body">
+                <small style="color: grey;">Product was listed 2 days ago</small>
               </div>
             </div>
-            <div class="card-body">
-              <small style="color: grey;">Stock(s) left: 4</small>
-            </div>
-            <div class="card-body">
-              <small style="color: grey;">Product was listed 2 days ago</small>
-            </div>
           </div>
-        </div>
 <!--AYAW USA PAG COPY PASTE, E EDIT USA ANG ISA KA CARD THEN THINK OF IT NA FINAL THEN ARA NAKA MAG COP PASTE-->
 
         
