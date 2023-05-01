@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ThriftHub | Marketplace</title>
+  <title>ThriftHub | Notifications</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -66,48 +66,9 @@
         <li class="nav-item dropdown">
 
           <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
-            <i class="bi bi-cart"></i>
-            <span class="badge bg-primary badge-number">4</span>
-          </a>
-          <!-- End Notification Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
-            <li class="dropdown-header">
-              You have 4 items in your cart
-              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li class="notification-item">
-              <i class="bi bi-check-circle text-success"></i>
-              <div>
-                <h4>Sapatos ni Neri</h4>
-                <p>............</p>
-                <p>..........</p>
-              </div>
-            </li>
-
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">Show cart</a>
-            </li>
-            
-
-          </ul><!-- End Notification Dropdown Items -->
-          
-        </li><!-- End Notification Nav -->
-
-        <li class="nav-item dropdown">
-
-          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
             <i class="bi bi-bell"></i>
             <span class="badge bg-primary badge-number">4</span>
-          </a>
-          <!-- End Notification Icon -->
+          </a><!-- End Notification Icon -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
             <li class="dropdown-header">
@@ -172,10 +133,9 @@
             <li class="dropdown-footer">
               <a href="#">Show all notifications</a>
             </li>
-            
 
           </ul><!-- End Notification Dropdown Items -->
-          
+
         </li><!-- End Notification Nav -->
 
         <li class="nav-item dropdown">
@@ -392,57 +352,46 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Marketplace</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="user.html">Listings</a></li>
-          <li class="breadcrumb-item active">Trending</li>
-        </ol>
-      </nav>
+      <h1>Notifications</h1>
     </div><!-- End Page Title -->
-
-    <!--For Products-->
-    <section class="items">
-      
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="card card-cascade wider shadow">
-            <div class="view view-cascade overlay text-center">
-              <img class="card-img-top" src="/assets/img/product-1.jpg">
-              <h2 class="card-title">Sapatos ni Neri</h2>
-            </div>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="/resources/img/tshirt1.jpg" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
             <div class="card-body">
-              <p class="text-center fw-bolder large bi-currency-dollar" style="color:rgb(11, 224, 82); font-size: 24px;">9.00</p>
-            </div>
-            <div class="card-body">
-              <p class="justify-content-evenly">Lorem, Parinasan sit Neri dolor Talaba et Taboada al Aldebaran</p>
-            </div>
-            <div class="card-body text-center px-4 m-auto">
-              <div class="btn-group" role="group">
-                <button type="button" class="btn btn-secondary" onclick="successAddCart()">Add to cart</button>
-                <button type="button" class="btn btn-success" onclick="window.open('#')">Buy Now</button>
-              </div>
-            </div>
-            <div class="card-body">
-              <small style="color: grey;">Stock(s) left: 4</small>
+              <h5 class="card-title">This item is Phenomenal!</h5>
+              <p class="card-text"><a href="marketplace.html">Browse more</a></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
-<!--AYAW USA PAG COPY PASTE, E EDIT USA ANG ISA KA CARD THEN THINK OF IT NA FINAL THEN ARA NAKA MAG COP PASTE-->
+      </div>
 
-        
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="/resources/img/tshirt.jpg" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">This item is Phenomenal!</h5>
+              <p class="card-text"><a href="marketplace.html">Browse more</a></p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
-    </section>
-      
+          </div>
+        </div>
+      </div>
 
   </main><!-- End #main -->
 
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
-  <div id="addcart">Item successfully added to cart.</div>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/chart.js/chart.umd.js"></script>
   <script src="assets/vendor/echarts/echarts.min.js"></script>
@@ -453,7 +402,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="/scripts/script.js"></script>
 
 </body>
 

@@ -40,7 +40,7 @@ input#p-inpt {
     background-color: transparent;
     width: 300px;
     height: 40px;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
     padding-left: 4%;
     margin-left: 2%;
 }
@@ -123,7 +123,6 @@ label.form-check-label {
 p.forget a {
     color: white;
     border-bottom: 1px white;
-    text-decoration: none;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -136,12 +135,9 @@ p.forget a:hover {
 
 .forgetpass {
     margin: auto;
-    padding-left: 200px;
 }
 
-.forgetpass a {
-    position: relative;
-    top: -28px;
+.forgetpass a{
     font-size: .9em;
     font-family: Nunito-SemiBold;
 }

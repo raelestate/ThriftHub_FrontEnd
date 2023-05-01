@@ -244,6 +244,7 @@ h6 {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+
 /* Alerts */
 .alert-heading {
   font-weight: 500;
@@ -697,7 +698,7 @@ h6 {
 }
 
 .sidebar-nav .nav-link:hover {
-  color: #4154f1;
+  color: white;
   background: #386edb;
 }
 
@@ -996,7 +997,7 @@ h6 {
 .profile .profile-card h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #2c384e;
+  color: #f3f3f3;
   margin: 10px 0 0 0;
 }
 

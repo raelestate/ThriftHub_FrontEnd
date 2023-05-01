@@ -9,6 +9,7 @@
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link href="/styles/index.css" rel="stylesheet">
   <link href="/styles/fonts.css" rel="stylesheet" type="text/css">
+  <link href="/styles/signup.css" rel="stylesheet">
   <script src="./scripts/script.js" defer></script>
   <!--JAVASCRIPT BOOTSTRAP-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
@@ -19,44 +20,57 @@
 </head>
 
 <body>
-  <section id="login">
-    <div class="container d-flex justify-content-center pb-5 pb-5">
-      <div class="row">
-        <div class="col">
-          <img class="logo pt-5" src="/resources/Logo.png">
-          <p class="welcometext text-start">Hello! Let's Get to know each other.</p>
-          <form>
-            <small>
-              <p class="email">First Name:</p>
-            </small>
-            <input type="text" id="e-inpt">
-            <small>
-              <p class="email">Last Name:</p>
-            </small>
-            <input type="text" id="e-inpt">
-            <small>
-              <p class="email">Date of Birth:</p>
-            </small>
-            <input type="text" id="e-inpt">
-            <small>
-              <p class="email">Email-Address:</p>
-            </small>
-            <input type="text" id="e-inpt">
-            <small>
-              <p class="email">Username:</p>
-          </small>
-          <input type="text" id="e-inpt">
-            <small>
-              <p class="passw">Password:</p>
-            </small>
-            <input type="password" id="p-inpt">
-            <button class="btn-hover1 color-1" onclick="window.open('user-profile.html')">Let's GO!</button>
-          </form>
+  <div class="signup-form">
+    <form method="post">
+      <h2>Register</h2>
+      <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name"
+              required="required"></div>
+          <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name"
+              required="required"></div>
         </div>
       </div>
+
+      <div class="form-group">
+        <input type="text" class="form-control" name="address" placeholder="Address" required="required">
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col"><input type="text" class="form-control" name="age" placeholder="Age" required="required">
+          </div>
+          <div class="col"><input type="text" class="form-control" name="dob" placeholder="Date of Birth"
+              required="required">
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+      </div>
+
+      <div class="form-group">
+        <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password"
+          required="required">
+      </div>
+      <div class="form-group">
+        <label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of
+            Use</a> &amp; <a href="#">Privacy Policy</a></label>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-success btn-lg btn-block" onclick="window.open('user.html')">Register Now</button>
+      </div>
+    </form>
+    <div class="text-center">Already have an account? <a href="login.html">Sign in</a>
     </div>
-  </section>
- 
+  </div>
 </body>
 
 </html>
