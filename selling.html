@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Data</title>
+  <title>ThriftHub |</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -30,6 +30,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="styles/marketplace.css" rel="stylesheet">
 
 
 </head>
@@ -40,7 +41,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="#" class="logo d-flex align-items-center">
         <span class="d-none d-lg-block">ThriftHub</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
@@ -61,6 +62,43 @@
             <i class="bi bi-search"></i>
           </a>
         </li><!-- End Search Icon-->
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-cart"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a>
+          <!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 items in your cart
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sapatos ni Neri</h4>
+                <p>............</p>
+                <p>..........</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show cart</a>
+            </li>
+            
+
+          </ul><!-- End Notification Dropdown Items -->
+          
+        </li><!-- End Notification Nav -->
 
         <li class="nav-item dropdown">
 
@@ -208,7 +246,6 @@
             <li>
               <hr class="dropdown-divider">
             </li>
-
             <li class="dropdown-footer">
               <a href="#">Show all messages</a>
             </li>
@@ -254,7 +291,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="login.html">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -273,53 +310,40 @@
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
-
-
-      <li class="nav-heading">Home</li>
-
-      <li class="nav-item">
-        <a class="nav-link " href="user.html">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span>Data Tables</span>
-            </a>
-          </li>
-        </ul>
-      </li><!-- End Tables Nav -->
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#charts-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-bar-chart"></i><span>Revenue Streams</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="charts-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="charts-chartjs.html">
-              <i class="bi bi-circle"></i><span>Data Chart</span>
-            </a>
-          </li>
-
-        </ul>
-      </li><!-- End Charts Nav -->
-      <li class="nav-heading">Marketplace</li>
-
       <li class="nav-item">
         <a class="nav-link collapsed" href="marketplace.html">
-          <i class="bi bi-person"></i>
-          <span>Marketplace</span>
+          <i class="bi bi-shop"></i>
+          <span>Browse All</span>
         </a>
-      </li><!-- End Profile Page Nav -->
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="notifications.html">
+          <i class="bi bi-bell"></i>
+          <span>Notifications</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="inbox.html">
+          <i class="bi bi-inbox"></i>
+          <span>Inbox</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="buying.html">
+          <i class="bi bi-cart"></i>
+          <span>Buying</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="selling.html">
+          <i class="bi bi-currency-dollar"></i>
+          <span>Selling</span>
+        </a>
+      </li>
+      
+      <!-- End Profile Page Nav -->
 
-      <li class="nav-heading">Pages</li>
+      <li class="nav-heading">Profile</li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="users-profile.html">
@@ -328,99 +352,41 @@
         </a>
       </li><!-- End Profile Page Nav -->
 
-
+      <li class="nav-heading">Categories</li>
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-heart"></i>
+          <span>Clothes</span>
+        </a>
+      </li>
 
       <li class="nav-item">
         <a class="nav-link collapsed" href="#">
-          <i class="bi bi-box-arrow-in-right"></i>
-          <span>Logout</span>
+          <i class="bi bi-phone"></i>
+          <span>Electronics</span>
         </a>
-      </li><!-- End Login Page Nav -->
+      </li>
 
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-tag"></i>
+          <span>Free Stuff</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="#">
+          <i class="bi bi-align-top"></i>
+          <span>Others</span>
+        </a>
+      </li>
 
     </ul>
-
+    
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>Data Table</h1>
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item">Table</li>
-          <li class="breadcrumb-item active">Data Table</li>
-        </ol>
-      </nav>
-    </div><!-- End Page Title -->
-
-    <section class="section">
-      <div class="row">
-        <div class="col-lg-12">
-
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Data Table</h5>
-              <p>.............</p>
-
-              <!-- Table with stripped rows -->
-              <table class="table datatable">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Position</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Start Date</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>............</td>
-                    <td>.........</td>
-                    <td>28</td>
-                    <td>2016-05-25</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>............</td>
-                    <td>.........</td>
-                    <td>35</td>
-                    <td>2014-12-05</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>............</td>
-                    <td>.........</td>
-                    <td>45</td>
-                    <td>2011-08-12</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>............</td>
-                    <td>.........</td>
-                    <td>34</td>
-                    <td>2012-06-11</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>............</td>
-                    <td>.........</td>
-                    <td>47</td>
-                    <td>2011-04-19</td>
-                  </tr>
-                </tbody>
-              </table>
-              <!-- End Table with stripped rows -->
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
 
   </main><!-- End #main -->
 
