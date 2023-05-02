@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ThriftHub |</title>
+  <title>ThriftHub | Transaction</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -94,10 +94,10 @@
             <li class="dropdown-footer">
               <a href="#">Show cart</a>
             </li>
-            
+
 
           </ul><!-- End Notification Dropdown Items -->
-          
+
         </li><!-- End Notification Nav -->
 
         <li class="nav-item dropdown">
@@ -352,74 +352,34 @@
           <span>Create Listing</span>
         </a>
       </li>
-      
-      <!-- End Profile Page Nav -->
-
-      <li class="nav-heading">Profile</li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="users-profile.html">
-          <i class="bi bi-person"></i>
-          <span>Profile</span>
-        </a>
-      </li><!-- End Profile Page Nav -->
-
-      <li class="nav-heading">Categories</li>
-      
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="bi bi-heart"></i>
-          <span>Clothes</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="bi bi-phone"></i>
-          <span>Electronics</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="bi bi-tag"></i>
-          <span>Free Stuff</span>
-        </a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="bi bi-align-top"></i>
-          <span>Others</span>
-        </a>
-      </li>
 
     </ul>
-    
+
   </aside><!-- End Sidebar-->
 
   <main id="main" class="main">
     <div class="pagetitle">
-        <h1>Transaction</h1>
+      <h1>Transaction</h1>
     </div>
     <div class="card text-center">
-        <h5 class="card-header">Checking out a total of $15.00</h5>
-        <div class="card-body">
-          <h5 class="card-title">Choose Transaction Type</h5>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courier">
-            Courier
-          </button>
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Meet-up
-          </button>
-        </div>
+      <h5 class="card-header">Checking out a total of $15.00</h5>
+      <div class="card-body">
+        <h5 class="card-title">Choose Transaction Type</h5>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courier">
+          Courier
+        </button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Meet-up
+        </button>
       </div>
+    </div>
   </main><!-- End #main -->
   <!---MODALS-->
-  
+
   <!-- Modal Courier-->
   <!-- Modal -->
-<div class="modal fade" id="courier" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" id="courier" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header text-center">
@@ -427,7 +387,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          <div class="pagetitle">
+            <h1 style="color:black">Courier range within Cebu City only.</h1>
+          </div>
+          <div class="pagetitle">
+            <small style="color:black">Total item</small>
+          </div>
+          <div class="form-group px-4 pt-3">
+            <input type="text" class="form-control" name="price" placeholder="Price" required="required">
+          </div>
+          <div class="form-group px-4 pt-3">
+            <input type="text" class="form-control" name="price" placeholder="Price" required="required">
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
