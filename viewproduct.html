@@ -336,6 +336,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link collapsed" href="viewcart.html">
+                    <i class="bi bi-cart-plus"></i>
+                    <span>View Cart</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link collapsed" href="selling.html">
                     <i class="bi bi-currency-dollar"></i>
                     <span>Selling</span>
@@ -391,61 +397,63 @@
         <div class="pagetitle">
             <h1>View Product</h1>
         </div>
-            <div class="row">
+        <div class="row">
 
 
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="/assets/img/product-1.jpg" class="card-img-top" alt="...">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="/assets/img/product-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="text-center card-title">Sapatos ni Neri</h5>
                         <div class="card-body">
-                            <h5 class="text-center card-title">Sapatos ni Neri</h5>
-                            <div class="card-body">
-                                <p class="text-center fw-bolder large bi-currency-dollar"
-                                    style="color:rgb(11, 224, 82); font-size: 24px;">9.00</p>
-                            </div>
-                            <div class="card-body">
-                                <p class="justify-content-evenly">Lorem, Parinasan sit Neri dolor Talaba et Taboada al
-                                    Aldebaran</p>
-                            </div>
-                            <p class="card-text"></p>
+                            <p class="text-center fw-bolder large bi-currency-dollar"
+                                style="color:rgb(11, 224, 82); font-size: 24px;">9.00</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="justify-content-evenly">Lorem, Parinasan sit Neri dolor Talaba et Taboada al
+                                Aldebaran</p>
+                        </div>
+                        <span>stocks left 1<br></span>
+                        <div class="d-grid gap-2 pt-3">
                             <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-md btn-secondary" onclick="successAddCart()">Add to
+                                <button type="button" class="btn btn-md btn-primary" onclick="successAddCart()"><i class="bi bi-cart px-2"></i>Add to
                                     cart</button>
-                                <button type="button" class="btn btn-md btn-success" onclick="window.open('#')">Buy
+                                <button type="button" class="btn btn-md btn-success" onclick="window.open('#')"><i class="bi bi-cash px-2"></i>Buy
                                     Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <h5 class="card-title px-3">Seller Information</h5>
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="/assets/img/profile-img3.jpg" class="img-fluid rounded-circle px-2">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Rhyll Neri</h5>
-                                    <div class="card-body">
-                                        <h5>Rate Seller</h5>
-                                        <i class="bi bi-star" style="color: yellow;"></i>
-                                        <i class="bi bi-star" style="color: yellow;"></i>
-                                        <i class="bi bi-star" style="color: yellow;"></i>
-                                        <i class="bi bi-star" style="color: yellow;"></i>
-                                        <i class="bi bi-star" style="color: yellow;"></i>
-                                    </div>
-                                    <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-primary"><i class="bi bi-chat px-2"></i>Message
-                                            Seller</a>
-                                    </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <h5 class="card-title px-3">Seller Information</h5>
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="/assets/img/profile-img3.jpg" class="img-fluid rounded-circle px-2">
+
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Rhyll Neri<br><span><i class="bi bi-circle-fill"
+                                            style="color: rgb(48, 199, 48);"></i>Active now</span></i></h5>
+                                <h5>Rate Seller</h5>
+                                <i class="bi bi-star" style="color: yellow;"></i>
+                                <i class="bi bi-star" style="color: yellow;"></i>
+                                <i class="bi bi-star" style="color: yellow;"></i>
+                                <i class="bi bi-star" style="color: yellow;"></i>
+                                <i class="bi bi-star" style="color: yellow;"></i>
+                                <div class="d-grid gap-2 pt-3">
+                                    <a href="#" class="btn btn-primary"><i class="bi bi-chat px-2"></i>Message
+                                        Seller</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
 
 
@@ -500,7 +508,7 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card"  >
+                <div class="card">
                     <img src="/assets/img/product-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="text-center card-title">Sapatos ni Neri</h5>
@@ -523,7 +531,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card"  >
+                <div class="card">
                     <img src="/assets/img/product-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="text-center card-title">Sapatos ni Neri</h5>
@@ -546,7 +554,7 @@
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card"  >
+                <div class="card">
                     <img src="/assets/img/product-1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="text-center card-title">Sapatos ni Neri</h5>
