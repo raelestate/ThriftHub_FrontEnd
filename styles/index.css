@@ -31,8 +31,8 @@ p.email {
     margin-bottom: 1%;
 }
 
-input#e-inpt,
-input#p-inpt {
+input .e-inpt,
+input .p-inpt {
     font-family: Nunito-Regular;
     border-radius: 10px;
     border: 1px solid white;
