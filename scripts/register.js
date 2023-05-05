@@ -48,23 +48,21 @@ form.addEventListener('submit', function(event) {
       alert("The passwords do not match.");
       return;
     }
-    // Check if the password is at least 8 characters long
 
     // Check if the email address is valid
     if (
       !/^([\w-]+(?:.[\w-]+)@[\w-]+(?:.[\w-]+))$/.test(
         document.querySelector('input[name="email"]').value
-      )
-    ) {
+      ))
+    {
       alert("Please enter a valid email address.");
       event.preventDefault();
       return;
     }
-  
     // Write the data to Firestore
-    const colRef = collection(db, `${username}`);
+    const collectionRefference = collection(db, `${username}`);
     console.log(username);
-    addDoc(colRef,{
+    addDoc(collectionRefference,{
       firstName,
       lastName,
       address,
