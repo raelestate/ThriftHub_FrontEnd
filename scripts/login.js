@@ -27,26 +27,21 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Create a function to handle the login form submission
-function handleLogin() {
-  // Get the email and password from the form
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+const querySnapshot = await getDocs(collection(db, `${users}`));
+querySnapshot.foreach((doc) => {
+  console.log(username, email, password);
+  const userUsername = `${doc.username}`;
+  const userEmail = `${doc.email}`;
+  const userPassword = getDocs(`${doc.password}`);
 
-  // Sign in the user with the email and password
-  auth
-    .signInWithEmailAndPassword(email, password)
-    .then(() => {
-        console.log(email, password);
-      // The user is signed in, redirect them to the home page
-      window.location.href = "marketplace.html";
-    })
-    .catch((error) => {
-      // The user failed to sign in, display an error message
-      console.log(error);
-      alert('error');
-    });
-}
+  if(userUsername && userEmail && userPassword == true){
+    window.location.href = "marketplace.html";
+  }
+  else{
+    alert("Test");
+  }
+  console.log(`${doc.id}=> ${doc.data()}`);
+});
 
 // Add an event listener to the login button
 document.getElementById("btnlogin").addEventListener("click", handleLogin);
