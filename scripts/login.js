@@ -5,6 +5,7 @@ import {
   getDocs,
   collection,
 } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js";
+import { getDatabase, ref, onValue, child, get } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -24,31 +25,20 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const database = getDatabase();
 
-const userRef = collection(db, 'user');
+const userUsername = document.getElementById('username');
+const userPassword = document.getElementById('password');
 
-let userData = [];
+const dbRef = ref(getDatabase());
+get(child(dbRef, `user`)).then((snapshot) => {
 
-getDocs(userRef)
-  .then((snapshot) => {
-    userData = [];
-    snapshot.docs.forEach((doc) => {
-      userData.push({ ...doc.data() });
-    });
-    console.log(userData);
-  })
-  .catch((err) => {
-    console.log(err.message);
-  });
-
-//login
-
-const form = document.getElementById('login_form');
-form.addEventListener('submit', function(event){
-  // const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
-  const email = document.getElementById('email').value;
-    if(userData !== email && userData !== password){
-      window.location.href = "marketplace.html";
-    }
+  if(userUsername ===  `${userUsername}` && userPassword === `${userPassword}`){
+    window.location.href = "marketplace.html";
+  }else {
+    console.log("No data available");
+  }
+}).catch((error) => {
+  console.error(error);
 });
+
