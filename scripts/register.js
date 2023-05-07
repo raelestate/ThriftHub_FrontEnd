@@ -59,8 +59,8 @@ form.addEventListener('submit', function(event) {
       event.preventDefault();
       return;
     }
-    // Write the data to Firestore
-    const collectionRefference = collection(db, `${username}`);
+    
+    const collectionRefference = collection(db, "user");
     console.log(username);
     addDoc(collectionRefference,{
       firstName,

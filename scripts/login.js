@@ -5,15 +5,12 @@ import {
   getDocs,
   collection,
 } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js";
-import {
-  getAuth,
-  signInWithEmailAndPassword,
-} from "https://www.gstatic.com/firebasejs/9.21.0/firebase-auth.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 const firebaseConfig = {
   apiKey: "AIzaSyB8ewDg68fMY9gkg-2_46jmudc3KIoiPCk",
   authDomain: "thrifthub-54ba8.firebaseapp.com",
@@ -26,22 +23,32 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
-const querySnapshot = await getDocs(collection(db, `${users}`));
-querySnapshot.foreach((doc) => {
-  console.log(username, email, password);
-  const userUsername = `${doc.username}`;
-  const userEmail = `${doc.email}`;
-  const userPassword = getDocs(`${doc.password}`);
+const userRef = collection(db, 'user');
 
-  if(userUsername && userEmail && userPassword == true){
-    window.location.href = "marketplace.html";
-  }
-  else{
-    alert("Test");
-  }
-  console.log(`${doc.id}=> ${doc.data()}`);
+let userData = [];
+
+getDocs(userRef)
+  .then((snapshot) => {
+    userData = [];
+    snapshot.docs.forEach((doc) => {
+      userData.push({ ...doc.data() });
+    });
+    console.log(userData);
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
+
+//login
+
+const form = document.getElementById('login_form');
+form.addEventListener('submit', function(event){
+  // const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  const email = document.getElementById('email').value;
+    if(userData !== email && userData !== password){
+      window.location.href = "marketplace.html";
+    }
 });
-
-// Add an event listener to the login button
-document.getElementById("btnlogin").addEventListener("click", handleLogin);
