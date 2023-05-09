@@ -51,8 +51,8 @@ getDocs(userCollection)
       const password = document.getElementById('password').value;
 
       for (let x = 0; x < userData.length; x++) {
-        let userValueEMail = userData[x].Username;
-        let userValuePassword = userData[x].Password;
+        let userValueEMail = userData[x].email;
+        let userValuePassword = userData[x].password;
 
         if (userValueEMail === email && userValuePassword === password) {
           window.location.href = "marketplace.html"
