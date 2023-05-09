@@ -50,8 +50,7 @@ form.addEventListener('submit', function(event) {
     }
 
     // Check if the email address is valid
-    if (
-      !/^([\w-]+(?:.[\w-]+)@[\w-]+(?:.[\w-]+))$/.test(
+    if (!/^([\w-]+(?:.[\w-]+)@[\w-]+(?:.[\w-]+))$/.test(
         document.querySelector('input[name="email"]').value
       ))
     {
@@ -59,9 +58,11 @@ form.addEventListener('submit', function(event) {
       event.preventDefault();
       return;
     }
+
     
     const collectionRefference = collection(db, "user");
     console.log(username);
+    if(collectionRefference)
     addDoc(collectionRefference,{
       firstName,
       lastName,

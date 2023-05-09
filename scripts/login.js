@@ -5,7 +5,6 @@ import {
   getDocs,
   collection,
 } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore.js";
-import { getDatabase, ref, onValue, child, get } from "https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -25,20 +24,55 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const database = getDatabase();
+// Get a reference to the Firestore database
 
-const userUsername = document.getElementById('username');
-const userPassword = document.getElementById('password');
+// Get all of the collections in the database
+const userCollection = collection(db, 'user');
+const userEmailCollection = collection(db, 'email');
+const userPasswordCollection = collection(db, 'password');
 
-const dbRef = ref(getDatabase());
-get(child(dbRef, `user`)).then((snapshot) => {
+let userData = [];
+let example = ["xymenr", "xymnere", "Xymer"];
 
-  if(userUsername ===  `${userUsername}` && userPassword === `${userPassword}`){
-    window.location.href = "marketplace.html";
-  }else {
-    console.log("No data available");
-  }
-}).catch((error) => {
-  console.error(error);
-});
+// Iterate over the collections and print their names
+getDocs(userCollection)
+  .then((snapshot) => {
+    userData = []
+    snapshot.docs.forEach((doc) => {
+      userData.push({ ...doc.data() })
+    })
+    console.log(userData)
+
+    const form = document.getElementById('login_form');
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      for (let x = 0; x < userData.length; x++) {
+        let userValueEMail = userData[x].Username;
+        let userValuePassword = userData[x].Password;
+
+        if (userValueEMail === email && userValuePassword === password) {
+          window.location.href = "marketplace.html"
+        }
+      }
+
+      // if (userEmail === ) {
+      //   window.location.href = "marketplace.html";
+      // }
+      // else {
+      //   alert("error Creds");
+      //   window.location.href = "login.html";
+      // }
+
+    })
+  }).catch(err => {
+    console.log(err.message)
+  })
+
+
+
+
 
