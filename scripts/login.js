@@ -50,23 +50,20 @@ getDocs(userCollection)
       const email = document.getElementById('email').value;
       const password = document.getElementById('password').value;
 
+      const userProfile = document.getElementById('userProfile');
+
+
+
+
       for (let x = 0; x < userData.length; x++) {
         let userValueEMail = userData[x].email;
         let userValuePassword = userData[x].password;
-
+        
         if (userValueEMail === email && userValuePassword === password) {
-          window.location.href = "marketplace.html"
+          window.location.href = "marketplace.html";
+          userProfile.innerHTML = userData[x].username;
         }
       }
-
-      // if (userEmail === ) {
-      //   window.location.href = "marketplace.html";
-      // }
-      // else {
-      //   alert("error Creds");
-      //   window.location.href = "login.html";
-      // }
-
     })
   }).catch(err => {
     console.log(err.message)
